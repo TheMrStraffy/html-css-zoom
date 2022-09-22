@@ -4,18 +4,88 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css' integrity='sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==' crossorigin='anonymous'/>
   <link rel="stylesheet" href="css/style.css">
   <title>Document</title>
 </head>
 <body>
-  <header>
-    H
+  <header class="d-flex">
+    <div class="view-options d-flex">
+      <i class="fa-solid fa-grip"></i>
+       <p>Speaker View</p>
+    </div>
+    <div class="full-screen d-flex">
+      <i class="fa-solid fa-maximize"></i>
+    </div>
   </header>
   <main>
     M
   </main>
   <footer>
-    F
+    <div class="row d-flex">
+      <!-- Left -->
+      <div class="col d-flex">
+        <div class="box">
+          <i class="fa-solid fa-microphone"></i>
+           <p>Mute</p>
+        </div>
+        <i class="fa-solid fa-chevron-up"></i>
+        <div class="box">
+          <i class="fa-solid fa-video"></i>
+           <p>Stop Video</p>
+        </div>
+        <i class="fa-solid fa-chevron-up"></i>
+      </div>
+      <!-- /Left -->
+
+      <!-- middle -->
+      <div class="col d-flex">
+        <div class="box">
+          <i class="fa-solid fa-user-plus"></i>
+          <p>Invite</p> 
+        </div>
+        <div class="box">
+          <i class="fa-solid fa-user-group"></i>
+          <p>Manage Participants </p>
+        </div>
+        <div class="box">
+          <i class="fa-solid fa-chart-column"></i>
+           <p>Polling</p>
+        </div>
+        <div class="box">
+          <i class="fa-solid fa-share-from-square"></i>
+           <p>Share Screen</p>
+        </div>
+
+        <i class="fa-solid fa-chevron-up"></i>
+
+        <div class="box">
+          <i class="fa-solid fa-comment"></i>
+           <p>Chat</p>
+        </div>
+        <div class="box">
+          <i class="fa-solid fa-record-vinyl"></i>
+           <p>Record</p>
+        </div>
+        <div class="box">
+          <i class="fa-solid fa-table-cells-large"></i>
+           <p>Breakout Rooms</p>
+        </div>
+        <div class="box">
+          <i class="fa-solid fa-ellipsis"></i>
+           <p>More</p>
+        </div>
+      </div>
+      <!-- /middle -->
+
+      <!-- right -->
+      <div class="col d-flex">
+        <div class="box d-flex">
+           <p>End Meeting</p>
+        </div>
+      </div>
+      <!-- /right -->
+    </div>
   </footer>
 </body>
 </html>
