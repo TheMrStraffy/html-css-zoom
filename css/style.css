@@ -24,11 +24,13 @@ header{
 }
 header > .view-options, .full-screen{
   margin-right: 20px;
-  padding: 5px 8px;
+  padding: 0px 10px;
   background-color: #4a4a4a;
   justify-content: center;
   align-items: center;
   border-radius: 8px;
+  height: 70%;
+  cursor: pointer;
 }
 
 header .view-options i{
@@ -42,27 +44,35 @@ header .view-options i{
 
 main{
   height: calc(100vh - 140px);
-  overflow: hidden;
+  overflow: auto;
   background-color: black;
   color: white;
 }
 
 .main-wrapper{
-  width: 90%;
+  width: 95%;
   margin: 0 auto;
+  flex-wrap: wrap;
+  gap: 15px 5px;
+  justify-content: center;
+  align-items: center;
 }
 
 .main-wrapper .user-box{
   position: relative;
   width: 245px;
+  height: 145px;
 }
 
 .main-wrapper .user-box img{
   width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
 }
 .main-wrapper .user-box .user-info{
   position: absolute;
-  bottom: 10px;
+  bottom: 5px;
   left: 0;
   background-color: #4444447c;
   padding: 3px 3px;
@@ -90,9 +100,12 @@ footer .row .col{
   
   
 }
-footer .row .col .box:nth-child(4) > i{
+footer .row .col i:active{
   color: #4bc800;
 }
+/* footer .row .col .box:nth-child(4) > i{
+  color: #4bc800;
+} */
 footer .row .col:last-child{
   justify-content: flex-end;
 
@@ -102,7 +115,10 @@ footer .row .col:last-child .box{
   background-color: #4a4a4a;
   height: 100%;
   padding: 0px 30px;
-  
+  cursor: pointer;
+}
+footer .row .col:last-child .box p{
+  font-size: 1.1rem;
 }
 footer .row .col .box{
   flex-direction: column;
@@ -113,6 +129,7 @@ footer .row .col .box{
   
 }
 footer .row .col i{
+  cursor: pointer;
   padding: 0 3px;
   font-size: 0.8rem;
 }
