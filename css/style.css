@@ -1,0 +1,24 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: antiquewhite;
+}
+
+header{
+  height: 50px;
+  background-color: tomato;
+}
+
+main{
+  height: calc(100vh - 130px);
+  overflow: hidden;
+}
+
+footer{
+  height: 80px;
+  background-color: darkgray;
+}
